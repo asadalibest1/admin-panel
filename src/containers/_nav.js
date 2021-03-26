@@ -3,133 +3,286 @@ import CIcon from '@coreui/icons-react'
 
 const _nav =  [
  
-  {
-    _tag: 'CSidebarNavTitle',
-    _children: ['Account Receivables']
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Invoice',
-    to: '/theme/typography',
-    icon: <CIcon name="cil-notes" customClasses="c-sidebar-nav-icon"/>,
-  },
-  {
-    _tag: 'CSidebarNavDropdown',
-    name: 'Invoice Payment',
-    route: '/base',
-    icon: <CIcon name="cil-dollar" customClasses="c-sidebar-nav-icon"/>,
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Partial Payment',
-        to: '/base/breadcrumbs',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Payment Record',
-        to: '/base/cards',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Advance Recordings',
-        to: '/base/cards',
-      },
-    ],
-  },
-  {
-    _tag: 'CSidebarNavDropdown',
-    name: 'Adjustment',
-    route: '/base',
-    icon: <CIcon name="cil-chart-pie" customClasses="c-sidebar-nav-icon"/>,
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'by Selecting invoice',
-        to: '/base/breadcrumbs',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Manual Entry',
-        to: '/base/cards',
-      },
-    ],
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'List Invoice',
-    icon: <CIcon name="cil-list" customClasses="c-sidebar-nav-icon"/>,
-    to: '/base/breadcrumbs',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Customer Trail Balance',
-    icon: <CIcon name="cil-check-circle" customClasses="c-sidebar-nav-icon"/>,
-    to: '/base/breadcrumbs',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Ageing Report',
-    icon: <i class="cil-address-book"></i>,
-    to: '/base/breadcrumbs',
-  },
-  // https://github.com/coreui/coreui-icons#yarn
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Customer Ledger',
-    icon: <CIcon name="cil-notes" customClasses="c-sidebar-nav-icon"/>,
-    to: '/base/breadcrumbs',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Customer Ledger',
-    icon: <CIcon name="cil-notes" customClasses="c-sidebar-nav-icon"/>,
-    to: '/base/breadcrumbs',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Item Group',
-    icon: <CIcon name="cil-notes" customClasses="c-sidebar-nav-icon"/>,
-    to: '/base/breadcrumbs',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Payment Mode Master',
-    icon: <CIcon name="cil-notes" customClasses="c-sidebar-nav-icon"/>,
-    to: '/base/breadcrumbs',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Customer Master / Customer Profile',
-    icon: <CIcon name="cil-notes" customClasses="c-sidebar-nav-icon"/>,
-    to: '/base/breadcrumbs',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Transition Table ',
-    icon: <CIcon name="cil-notes" customClasses="c-sidebar-nav-icon"/>,
-    to: '/base/breadcrumbs',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Sales',
-    icon: <CIcon name="cil-notes" customClasses="c-sidebar-nav-icon"/>,
-    to: '/base/breadcrumbs',
-  },
+  // {
+  //   _tag: 'CSidebarNavTitle',
+  //   _children: ['Account Receivables']
+  // },
 
-  
-  {
-    _tag: 'CSidebarNavTitle',
-    _children: ['Others']
-  },
   {
     _tag: 'CSidebarNavItem',
     name: 'Dashboard',
     to: '/dashboard',
-    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
+    icon: <CIcon name="" customClasses="c-sidebar-nav-icon"/>,
+    // icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
     badge: {
       color: 'info',
       text: 'NEW',
     }
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'Account Receivables',
+    route: '/base',
+    id:"Account-Receivables",
+    icon: <CIcon name="" customClasses="c-sidebar-nav-icon"/>,
+    _children: [
+     
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Sales Invoice',
+        // to: '/theme/typography',
+        icon: <CIcon name="cil-notes" customClasses="c-sidebar-nav-icon"/>,
+      },
+      {
+        _tag: 'CSidebarNavDropdown',
+        name: 'Invoice',
+        route: '/base',
+        icon: <CIcon name="cil-dollar" customClasses="c-sidebar-nav-icon"/>,
+        _children: [
+          {
+            _tag: 'CSidebarNavItem',
+            name: 'Partial Payment',
+            // to: '/base/breadcrumbs',
+          },
+          {
+            _tag: 'CSidebarNavItem',
+            name: 'Payment Record',
+            // to: '/base/cards',
+          },
+          {
+            _tag: 'CSidebarNavItem',
+            name: 'Advance Recordings',
+            // to: '/base/cards',
+          },
+        ],
+      },
+      {
+        _tag: 'CSidebarNavDropdown',
+        name: 'Adjustment',
+        route: '/base',
+        icon: <CIcon name="cil-chart-pie" customClasses="c-sidebar-nav-icon"/>,
+        _children: [
+          {
+            _tag: 'CSidebarNavItem',
+            name: 'by Selecting invoice',
+            // to: '/base/breadcrumbs',
+          },
+          {
+            _tag: 'CSidebarNavItem',
+            name: 'Manual Entry',
+            // to: '/base/cards',
+          },
+        ],
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'List Invoice',
+        icon: <CIcon name="cil-list" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Customer Trail Balance',
+        icon: <CIcon name="cil-check-circle" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Ageing Report',
+        icon: <CIcon name="cilNotes" customClasses="c-sidebar-nav-icon"/>,
+      },
+      // https://github.com/coreui/coreui-icons#yarn
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Customer Ledger',
+        icon: <CIcon name="cilBook" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Item Group',
+        icon: <CIcon name="cilSpreadsheet" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Payment Mode Master',
+        icon: <CIcon name="cilCash" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Customer Master / Profile',
+        icon: <CIcon name="cilUser" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Transition Table ',
+        icon: <CIcon name="cilGlobeAlt" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Sales',
+        icon: <CIcon name="cilIndustry" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+    
+
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'Account Payable',
+    route: '/base',
+    id:"Account-Receivables",
+    icon: <CIcon name="" customClasses="c-sidebar-nav-icon"/>,
+    _children: [
+     
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Vendor Master',
+        // to: '/theme/typography',
+        icon: <CIcon name="cil-notes" customClasses="c-sidebar-nav-icon"/>,
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Payment Profiles',
+        route: '/base',
+        icon: <CIcon name="cil-dollar" customClasses="c-sidebar-nav-icon"/>,
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Add & Manual Invoice',
+        route: '/base',
+        icon: <CIcon name="cil-dollar" customClasses="c-sidebar-nav-icon"/>,
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Invoice Payment',
+        route: '/base',
+        icon: <CIcon name="cil-dollar" customClasses="c-sidebar-nav-icon"/>,
+      },
+      {
+        _tag: 'CSidebarNavDropdown',
+        name: 'Adjustment',
+        route: '/base',
+        icon: <CIcon name="cil-chart-pie" customClasses="c-sidebar-nav-icon"/>,
+        _children: [
+          {
+            _tag: 'CSidebarNavItem',
+            name: 'Selecting invoice',
+            // to: '/base/breadcrumbs',
+          },
+          {
+            _tag: 'CSidebarNavItem',
+            name: 'Manual Entry',
+            // to: '/base/cards',
+          },
+        ],
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'List Invoice',
+        icon: <CIcon name="cil-list" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Vendor Trail Balance',
+        icon: <CIcon name="cil-check-circle" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Ageing Report',
+        icon: <CIcon name="cilNotes" customClasses="c-sidebar-nav-icon"/>,
+      },
+      // https://github.com/coreui/coreui-icons#yarn
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Vendor Ledger',
+        icon: <CIcon name="cilBook" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Transition Table ',
+        icon: <CIcon name="cilGlobeAlt" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'Stock Management',
+    route: '/base',
+    icon: <CIcon name="" customClasses="c-sidebar-nav-icon"/>,
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Transfer',
+        icon: <CIcon name="cilGlobeAlt" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Adjustment',
+        icon: <CIcon name="cilGlobeAlt" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/cards',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'List Stock / Transfer',
+        icon: <CIcon name="cilGlobeAlt" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Transition Table',
+        icon: <CIcon name="cilGlobeAlt" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'Cash Management',
+    route: '/base',
+    icon: <CIcon name="" customClasses="c-sidebar-nav-icon"/>,
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Expense Category - Master Table',
+        icon: <CIcon name="cilGlobeAlt" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Expense Lis',
+        icon: <CIcon name="cilGlobeAlt" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/cards',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Add Expense',
+        icon: <CIcon name="cilGlobeAlt" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Transition Table',
+        icon: <CIcon name="cilGlobeAlt" customClasses="c-sidebar-nav-icon"/>,
+        // to: '/base/breadcrumbs',
+      },
+    ],
+  },
+ 
+  
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['Others']
   },
   {
     _tag: 'CSidebarNavTitle',
